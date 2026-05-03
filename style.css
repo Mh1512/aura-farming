@@ -1,0 +1,45 @@
+:root {
+    --roxo-aura: #a020f0;
+    --verde-agua: #7ffd42;
+    --azul-senai: #005091;
+    --verde-ifsul: #329632;
+    --ouro: #ffd700;
+    --amarelo-queimado: #cc9900;
+}
+
+body { margin: 0; background: #0a0a0a; color: white; font-family: 'Arial', sans-serif; overflow: hidden; }
+
+/* MENU INICIAL */
+#menu-screen {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('fundo.jpeg');
+    background-size: cover; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+
+h1 { font-family: 'Comic Sans MS'; font-size: 70px; color: var(--ouro); text-shadow: 2px 2px #222; margin-bottom: 20px; }
+
+.faction-buttons { display: flex; gap: 40px; margin: 20px; }
+
+.faction-btn {
+    width: 340px; height: 100px; border: none; border-radius: 15px;
+    font-size: 65px; font-weight: bold; color: white; cursor: pointer; text-shadow: 2px 2px #000;
+}
+
+#btn-senai { background: var(--azul-senai); }
+#btn-ifsul { background: var(--verde-ifsul); }
+.main-btn { width: 200px; height: 55px; margin: 5px; border-radius: 10px; background: #323232; color: white; font-weight: bold; cursor: pointer; border: none; }
+
+/* ÁREA DE JOGO */
+.game-layout { display: flex; height: 100vh; }
+.main-area { flex: 7; background: #0a0a0a; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.shop-area { flex: 3; background: var(--amarelo-queimado); padding: 15px; overflow-y: auto; border-left: 3px solid #000; }
+
+#cristal { width: 200px; height: 200px; border-radius: 50%; background: var(--roxo-aura); cursor: pointer; }
+
+.progress-container { width: 400px; height: 15px; background: #323232; margin: 10px; }
+#progress-bar { height: 100%; background: var(--verde-agua); width: 0%; }
+
+.item-loja {
+    background: var(--verde-ifsul); margin-bottom: 8px; padding: 10px; border-radius: 5px;
+    cursor: pointer; display: flex; flex-direction: column; border: 1px solid #000;
+}
+.item-loja.bloqueado { background: #323232; opacity: 0.8; }

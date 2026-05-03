@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Farm de Aura Definitivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Menu Principal -->
+        <div id="menu-screen" class="screen">
+            <div id="version">v.0.67.18 (As crianças chinesas chegaram!)</div>
+            <h1>Farm de Aura Definitivo</h1>
+            <div class="faction-buttons">
+                <button id="btn-senai" class="faction-btn">SENAI</button>
+                <button id="btn-ifsul" class="faction-btn">IFsul</button>
+            </div>
+            <button id="btn-jogar" class="main-btn">JOGAR</button>
+        </div>
+
+        <!-- Tela do Jogo -->
+        <div id="game-screen" class="screen" style="display: none;">
+            <div class="game-layout">
+                <div class="main-area">
+                    <button id="btn-voltar-menu" class="mini-btn">MENU</button>
+                    <div id="aura-display">AURA: 0</div>
+                    <div id="click-area">
+                        <div id="cristal"></div>
+                    </div>
+                    <div class="stats-footer">
+                        <div id="nivel-texto">Nível 1: Chão de Fábrica</div>
+                        <div class="progress-container">
+                            <div id="progress-bar"></div>
+                        </div>
+                        <div id="clique-seg-info">Clique: 1 | Seg: 0</div>
+                    </div>
+                </div>
+                <div class="shop-area">
+                    <h3 style="text-align: center; color: white; text-shadow: 1px 1px #000;">LOJA DE UPGRADES</h3>
+                    <div id="loja-itens"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pop-up de Confirmação -->
+        <div id="modal-confirm" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2 id="modal-title">SE ALIAR?</h2>
+                <p style="color: #cc9900;">Essa decisão é permanente. Tem certeza?</p>
+                <div class="modal-btns">
+                    <button id="confirm-sim">SIM</button>
+                    <button id="confirm-nao">NÃO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
